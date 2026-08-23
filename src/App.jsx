@@ -6,6 +6,7 @@ import './App.css'
 import ClickCounter from './components/ClickCounter'
 import ScrollImage from './components/ScrollImage'
 import PlayingVideo from './components/PlayingVideo'
+import RenderTracker from './components/RenderTracker'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
       <ClickCounter />
         <ScrollImage />
       <PlayingVideo />
+      <RenderTracker />
     </div>
       
 

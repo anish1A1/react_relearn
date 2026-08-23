@@ -1,9 +1,11 @@
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import RenderTracker from "./RenderTracker";
 
 export default function ClickCounter() {
     let ref = useRef(0);
     const inputRef = useRef(null)
+    const [count, setCount] = useState(0);
 
     function handleClick() {
         ref.current = ref.current + 1;
@@ -24,6 +26,11 @@ export default function ClickCounter() {
 
             <input type="text" ref={inputRef} className="bg-red-300" />
             <button onClick={focusInput}>Focus</button>
+        
+            <h1>Render Tracker Demo</h1>
+            <button onClick={() => setCount(count + 1)}>Re-render App</button>
+            <RenderTracker />
+
         </div>
 
 
