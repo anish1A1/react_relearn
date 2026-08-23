@@ -4,17 +4,24 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import ClickCounter from './components/ClickCounter'
+import ScrollImage from './components/ScrollImage'
+import PlayingVideo from './components/PlayingVideo'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className="text-2xl max-w-fit">
-        <h1>We have started our project</h1>
-      </div>
+    <div className="border-b-2 border-blue-500">
+      <h1>
+        All Using use Ref hook
+      </h1>
 
       <ClickCounter />
+        <ScrollImage />
+      <PlayingVideo />
+    </div>
+      
 
       <div className="ticks"></div>
       <section id="spacer"></section>

@@ -15,7 +15,7 @@ export default function ClickCounter() {
     }
 
     return (
-        <div className="">
+        <div className="flex justify-between items-center">
 
             <button onClick={handleClick}>Click Me!</button>
 
