@@ -8,6 +8,7 @@ import TodoList from './components/TodoList'
 
 import { createTodos } from './utlis'
 import DisplayList from './components/DisplayList'
+import TaskApp from './components/ReducerHook/TaskApp'
 
 const todos = createTodos();
 
@@ -64,6 +65,11 @@ function App() {
       </div>
     </div>
 
+    <div className="border-1 mt-5">
+      <h1>For Reducer Hook</h1>
+      <TaskApp />
+
+    </div>
       <div className="ticks"></div>
       <section id="spacer"></section>
     </>
