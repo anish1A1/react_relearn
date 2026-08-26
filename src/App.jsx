@@ -7,6 +7,7 @@ import RenderTracker from './components/RenderTracker'
 import TodoList from './components/TodoList'
 
 import { createTodos } from './utlis'
+import DisplayList from './components/DisplayList'
 
 const todos = createTodos();
 
@@ -54,7 +55,14 @@ function App() {
       </div>
 
     </div>
-      
+    
+    <div className="border-1 ">
+      <h1>Now about useCallback Hook</h1>
+
+      <div className="">
+        <DisplayList />
+      </div>
+    </div>
 
       <div className="ticks"></div>
       <section id="spacer"></section>
