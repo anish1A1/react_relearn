@@ -9,6 +9,7 @@ import TodoList from './components/TodoList'
 import { createTodos } from './utlis'
 import DisplayList from './components/DisplayList'
 import TaskApp from './components/ReducerHook/TaskApp'
+import TaskAppReducer from './components/ReducerHook/TaskAppReducer'
 
 const todos = createTodos();
 
@@ -68,7 +69,10 @@ function App() {
     <div className="border-1 mt-5">
       <h1>For Reducer Hook</h1>
       <TaskApp />
+      <h1>Again but with changes (used useReducer)</h1>
+    <br />
 
+    <TaskAppReducer />
     </div>
       <div className="ticks"></div>
       <section id="spacer"></section>

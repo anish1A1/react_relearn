@@ -28,7 +28,7 @@ export default function TaskApp() {
 
     return(
         <div className="">
-        <h1>All Tasks to do</h1>
+        <h1>Tasks : Normally (Normally with many states usage) </h1>
 
         <AddList addList ={addList}/>
         
