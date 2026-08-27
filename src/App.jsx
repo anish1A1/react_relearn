@@ -11,6 +11,7 @@ import DisplayList from './components/DisplayList'
 import TaskApp from './components/ReducerHook/TaskApp'
 import TaskAppReducer from './components/ReducerHook/TaskAppReducer'
 import { RegistrationForm } from './components/ReducerHook/RegistrationForm'
+import Dashboard from './components/CustomHooks/Dashboard'
 
 const todos = createTodos();
 
@@ -76,6 +77,11 @@ function App() {
     <TaskAppReducer />
 
     <RegistrationForm />
+    </div>
+
+    <div className="border-t ">
+      <h1>Now custom Hooks</h1>
+      <Dashboard />
     </div>
       <div className="ticks"></div>
       <section id="spacer"></section>
