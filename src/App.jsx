@@ -10,6 +10,7 @@ import { createTodos } from './utlis'
 import DisplayList from './components/DisplayList'
 import TaskApp from './components/ReducerHook/TaskApp'
 import TaskAppReducer from './components/ReducerHook/TaskAppReducer'
+import { RegistrationForm } from './components/ReducerHook/RegistrationForm'
 
 const todos = createTodos();
 
@@ -73,6 +74,8 @@ function App() {
     <br />
 
     <TaskAppReducer />
+
+    <RegistrationForm />
     </div>
       <div className="ticks"></div>
       <section id="spacer"></section>
