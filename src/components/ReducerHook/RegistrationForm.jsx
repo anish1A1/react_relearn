@@ -17,7 +17,9 @@ function formReducer(state, action) {
   }
 }
 
-export function RegistrationForm() {
+// Ignore the code below look above on how to write reducer function.
+
+export default function RegistrationForm() {
   const [state, dispatch] = useReducer(formReducer, initialState);
 
   return (
